@@ -1,5 +1,5 @@
 {
-  "name": "ionic-loader-button",
+  "name": "ion-loader-button",
   "version": "1.0.0",
   "description": "A button which animates itself to a loader and animates back to a button",
   "main": "./dist/index.js",
