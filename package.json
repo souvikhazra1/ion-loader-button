@@ -1,7 +1,7 @@
 {
   "name": "ion-loader-button",
-  "version": "1.0.0",
-  "description": "A button which animates itself to a loader and animates back to a button",
+  "version": "1.0.1",
+  "description": "A ionic 2 button which animates itself to a loader and animates back to a button",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "files": "dist",
@@ -37,7 +37,7 @@
     "@angular/platform-browser-dynamic": "5.2.11",
     "ionic-angular": "3.9.2",
     "zone.js": "0.8.26",
-    "rxjs": "5.5.11",
+    "rxjs": "5.5.11"
   },
   "devDependencies": {
     "typescript": "~2.6.2"
