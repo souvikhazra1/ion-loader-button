@@ -1,0 +1,45 @@
+{
+  "name": "ionic-loader-button",
+  "version": "1.0.0",
+  "description": "A button which animates itself to a loader and animates back to a button",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": "dist",
+  "scripts": {
+    "ngc": "ngc",
+    "build": "rm -rf aot dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souvikhazra1/ion-loader-button.git"
+  },
+  "keywords": [
+    "loading button",
+    "morphing button",
+    "ionic",
+    "ionic 2",
+    "ionic 3"
+  ],
+  "author": "Souvik Hazra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/souvikhazra1/ion-loader-button/issues"
+  },
+  "homepage": "https://github.com/souvikhazra1/ion-loader-button#readme",
+  "dependencies": {
+    "@angular/animations": "5.2.11",
+    "@angular/common": "5.2.11",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11",
+    "@angular/core": "5.2.11",
+    "@angular/platform-browser": "5.2.11",
+    "@angular/platform-browser-dynamic": "5.2.11",
+    "ionic-angular": "3.9.2",
+    "zone.js": "0.8.26",
+    "rxjs": "5.5.11",
+  },
+  "devDependencies": {
+    "typescript": "~2.6.2"
+  }
+}
