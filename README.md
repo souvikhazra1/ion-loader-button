@@ -14,9 +14,9 @@ import {IonLoaderButtonModule} from 'ion-loader-button';
 
 @NgModule({
     imports: [
-	    ...,
-	    IonLoaderButtonModule,
-	    ...
+        ...,
+        IonLoaderButtonModule,
+        ...
     ]
 })
 export class AppModule {
