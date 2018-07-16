@@ -4,9 +4,23 @@ A ionic 2 button which animates itself to a loader and animates back to a button
 
 ## Getting Started
 
-Install from NPM--
+Install via NPM
 ```
 npm i ion-loader-button --save
+```
+Add IonLoaderButtonModule to your app.module.ts
+```
+import {IonLoaderButtonModule} from 'ion-loader-button';
+
+@NgModule({
+	imports: [
+		...,
+		IonLoaderButtonModule,
+		...
+	]
+})
+export class AppModule {
+}
 ```
 
 ## Example
