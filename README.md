@@ -1,4 +1,4 @@
-# ion-loading-button
+# ion-loader-button
 
 A ionic 2 button which animates itself to a loader and animates back to a button
 
