@@ -13,11 +13,11 @@ Add IonLoaderButtonModule to your app.module.ts
 import {IonLoaderButtonModule} from 'ion-loader-button';
 
 @NgModule({
-	imports: [
-		...,
-		IonLoaderButtonModule,
-		...
-	]
+    imports: [
+	    ...,
+	    IonLoaderButtonModule,
+	    ...
+    ]
 })
 export class AppModule {
 }
