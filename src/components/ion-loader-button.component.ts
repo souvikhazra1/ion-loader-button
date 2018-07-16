@@ -3,7 +3,7 @@ import {Button, Config} from "ionic-angular";
 import {animate, AnimationBuilder, style} from '@angular/animations';
 
 @Component({
-  selector: '[ion-loading-button]',
+  selector: '[ion-loader-button]',
   template: `
     <span class="button-inner">
       <ion-spinner *ngIf="spinnerVisible" [color]="spinnerColor"></ion-spinner>
@@ -11,7 +11,7 @@ import {animate, AnimationBuilder, style} from '@angular/animations';
     </span>
     <div class="button-effect"></div>`
 })
-export class IonLoadingButtonComponent extends Button implements AfterViewInit {
+export class IonLoaderButtonComponent extends Button implements AfterViewInit {
 
   @Input('spinnerColor') spinnerColor: string = 'primary';
   @Input('loading') loading = false;
@@ -30,7 +30,7 @@ export class IonLoadingButtonComponent extends Button implements AfterViewInit {
 
   private wasLoading = false;
 
-  constructor(@Attribute('ion-loading-button') ionButton: string, private config: Config, private elementRef: ElementRef, private renderer: Renderer, private animationBuilder: AnimationBuilder) {
+  constructor(@Attribute('ion-loader-button') ionButton: string, private config: Config, private elementRef: ElementRef, private renderer: Renderer, private animationBuilder: AnimationBuilder) {
     super(ionButton, config, elementRef, renderer);
   }
 

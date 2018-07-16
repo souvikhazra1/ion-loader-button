@@ -1,2 +1,2 @@
-export * from './ion-loading-button.module';
-export * from './components/ion-loading-button.component';
+export * from './ion-loader-button.module';
+export * from './components/ion-loader-button.component';
