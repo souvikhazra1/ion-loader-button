@@ -4,8 +4,10 @@ A ionic 2 button which animates itself to a loader and animates back to a button
 
 ## Getting Started
 
-Install from NPM--
+Install via NPM
+```
 npm i ion-loading-button --save
+```
 
 ## Example
 ```
