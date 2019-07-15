@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "angularCompilerOptions": {
+    "genDir": "dist",
+    "annotationsAs": "static fields",
+    "annotateForClosureCompiler": true
+  },
+  "exclude": [
+    "vendor",
+    "node_modules",
+    "built",
+    "dist"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
+

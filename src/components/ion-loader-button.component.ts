@@ -9,15 +9,16 @@ import {animate, AnimationBuilder, style} from '@angular/animations';
       <ion-spinner *ngIf="spinnerVisible" [color]="spinnerColor"></ion-spinner>
       <ng-content *ngIf="contentVisible"></ng-content>
     </span>
-    <div class="button-effect"></div>`
+    <div class="button-effect"></div>`,
+    styles: ['[ion-loader-button] { margin: auto; }']
 })
 export class IonLoaderButtonComponent extends Button implements AfterViewInit {
 
   @Input('spinnerColor') spinnerColor: string = 'primary';
   @Input('loading') loading = false;
 
-  private spinnerVisible = false;
-  private contentVisible = true;
+  spinnerVisible = false;
+  contentVisible = true;
 
   private nativeElement: HTMLElement = null;
   private elHeight: number;
@@ -35,6 +36,10 @@ export class IonLoaderButtonComponent extends Button implements AfterViewInit {
   }
 
   ngOnChanges(changes: any) {
+    this.work()
+  }
+
+  work() {
     if (this.nativeElement) {
       if (this.loading) {
         this.nativeElement.setAttribute('disabled', 'disabled');
@@ -81,6 +86,8 @@ export class IonLoaderButtonComponent extends Button implements AfterViewInit {
         style({width: this.elHeight + 'px', 'background-color': 'white'}),
         animate('350ms ease-in', style({width: this.mElWidth + 'px', 'background-color': this.initialBack, 'border-radius': this.initialBorderRadius}))
       ]);
+
+      this.work();
     }, 500);
   }
 }

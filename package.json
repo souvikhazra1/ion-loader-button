@@ -1,13 +1,13 @@
 {
   "name": "ion-loader-button",
-  "version": "1.0.2",
-  "description": "A ionic 2 button which animates itself to a loader and animates back to a button",
+  "version": "1.0.7",
+  "description": "An ionic 2/3 button which animates itself to a loader and animates back to a button",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "files": "dist",
+  "files": ["dist"],
   "scripts": {
     "ngc": "ngc",
-    "build": "rm -rf aot dist && npm run ngc",
+    "build": "del /S/Q aot && del /S/Q dist && npm run ngc",
     "publishPackage": "npm run build && npm publish"
   },
   "repository": {
@@ -28,10 +28,9 @@
   },
   "homepage": "https://github.com/souvikhazra1/ion-loader-button#readme",
   "dependencies": {
+    "@angular/forms": "5.2.11",
     "@angular/animations": "5.2.11",
     "@angular/common": "5.2.11",
-    "@angular/compiler": "5.2.11",
-    "@angular/compiler-cli": "5.2.11",
     "@angular/core": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
@@ -40,6 +39,8 @@
     "rxjs": "5.5.11"
   },
   "devDependencies": {
-    "typescript": "~2.6.2"
+    "typescript": "~2.6.2",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11"
   }
 }

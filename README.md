@@ -1,6 +1,6 @@
 # ion-loader-button
 
-A ionic 2 button which animates itself to a loader and animates back to a button
+An ionic 2/3 button which animates itself to a loader and animates back to a button
 
 ## Getting Started
 
