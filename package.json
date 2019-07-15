@@ -1,6 +1,6 @@
 {
   "name": "ion-loader-button",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "An ionic 2/3 button which animates itself to a loader and animates back to a button",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
