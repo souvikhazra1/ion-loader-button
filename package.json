@@ -31,7 +31,7 @@
     "@angular/forms": "5.2.11",
     "@angular/animations": "5.2.11",
     "@angular/common": "5.2.11",
-    "@angular/core": "5.2.11",
+    "@angular/core": "11.0.5",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
     "ionic-angular": "3.9.2",
